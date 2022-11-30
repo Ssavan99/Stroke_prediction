@@ -13,7 +13,6 @@ def convert_to_number(df, col_name):
 
 def get_clean_data():
     data = pd.read_csv("healthcare-dataset-stroke-data.csv")
-    ##data = data.sample(frac=1, random_state=1).reset_index()
     data = data.dropna()
     columns = data.columns
     for col_name in columns:
